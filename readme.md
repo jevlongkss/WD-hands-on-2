@@ -20,7 +20,7 @@
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=neilll24/WD---Hands-On-2)
+![](https://github.com/jevlongkss/WD-hands-on-2)
 
 ---
 
@@ -180,6 +180,6 @@ Five animated card styles and several static card layouts give consumers a wide 
 | Title | Purpose | Link |
 |-|-|-|
 | Google | Icons, images, and backgrounds. | google.com |
-| Pinterest | Idea for Landing page, hero page, and card designs, images of heroes | pinterest.com |
-| Youtube | Idea on how to create a good website, tutorials | https://www.youtube.com/results?search_query=how+to+make+landing+page+vscode |
+| Pinterest | Idea for Landing page, hero page, and card designs. and images for heroes | pinterest.com |
+| Youtube | Idea on how to create a good website | https://www.youtube.com/results?search_query=how+to+make+landing+page+vscode |
 | Deployment Link | Published site link | https://neilll24.github.io/WD---Hands-On-2/index.html |
