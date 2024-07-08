@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', serif;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4rem;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F2EBDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 30px;
+    height: 500px;
+    width: 250px;
+    background-color: #fff;
+    border: 5px solid black;
+    box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    border-bottom: 5px solid #000;
+    z-index: 1;
+}
+
+.card-image > img {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+}
+
+#Vegeta > .card-image {
+    height: 55%;
+    background-color: #FFDD33;
+    overflow: hidden; /* Ensures the image doesn't overflow its container */
+}
+
+#Vegeta > .card-image > img {
+    width: auto; /* Ensures the image width is its natural size */
+    height: 100%; /* Keeps the image height at 100% of its container */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 5 auto; /* Centers the image horizontally */
+}
+
+#Vegeta h2 {
+    color: #59C887;
+    letter-spacing: -5px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#Vegeta p {
+    font-size: 2rem;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#Vegeta > .card-text {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Vegeta > .card-text > div > div:first-child {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#Vegeta > .card-text > div > div:first-child > span:first-child {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#Vegeta > .card-text > div > div:first-child > span:last-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#Vegeta > .card-text > div > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-right: none;
+    border-bottom: none;
+    padding: 10px 20px;
+}
+
+#Vegeta > .card-text > div > div:last-child > span:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#Vegeta > .card-text > div > div:last-child > span:last-child {
+    font-weight: 500;
+}
+
+#Trunks > .card-image {
+    height: 72%;
+    background-color: #5CAAB4;
+}
+
+#Trunks > .card-image > img {
+    width: 130%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+#Trunks h2 {
+    font-size: 3rem;
+    letter-spacing: 15px;
+    text-align: center;
+    margin-left: 10px;
+    color: #2E5579;
+}
+
+#Trunks > .card-text > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+#Trunks > .card-text > div > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+#Trunks > .card-text > div > div:first-child > span {
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#Trunks > .card-text > div > div:last-child {
+    display: flex;
+}
+
+#Trunks > .card-text > div > div:last-child > span:first-child {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+#Trunks > .card-text > div > div:last-child > span:last-child {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#bulma > .card-image {
+    height: calc(80% - 5px);
+    background-color: #A01F29;
+    border-top: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bulma img {
+    height: 90%;
+}
+
+#bulma > .card-text {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+
+#bulma > .card-text > div {
+    width: 100%;
+}
+
+#bulma > .card-text > div:last-child {
+    border-left: 3px solid black;
+}
+
+#bulma > .card-text > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bulma > .card-text > div:first-child > span:first-child {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#bulma > .card-text > div:first-child > span:last-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#bulma > .card-text > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bulma > .card-text > div:last-child > span:first-child {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+#bulma > .card-text > div:last-child > span:nth-of-type(2) {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#bulma > .card-text > div:last-child > span:last-child {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#bulma > .card-image p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header {
+    background: linear-gradient(to bottom, rgb(192, 192, 192), blue);
+    text-align: center;
+    color: purple;
+}
+
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #222222;
+    --color-accent: #ff7f50;
+    --color-background: url('') center/cover no-repeat; 
+    --font-primary: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6) var(--color-background);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.header .nav a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.header .logo img {
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.header .logo img:hover {
+    transform: rotate(360deg);
+    border: 1px solid purple;
+    border-radius: 0;
+}
+
+.footer-note {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-note p {
+    margin: 0;
+}
+
+.footer-note p strong {
+    color: #FF4500;
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Global reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.header .btn.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+.btn-home {
+    background-color: #3498db;
+}
+
+.btn-hero-1 {
+    background-color: #2ecc71;
+}
+
+.btn-hero-2 {
+    background-color: #e67e22;
+}
+
+.btn-hero-3 {
+    background-color: #9b59b6;
+}
+
+.btn-hero-4 {
+    background-color: #f39c12;
+}
+
+.btn-hero-5 {
+    background-color: #1abc9c;
+}
+
+.btn-card-gallery {
+    background-color: #e74c3c;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 48px;
+    color: chartreuse;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.title::before, .title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background-color:#7118cf;
+    animation: title-underline 2s infinite;
+}
+
+.title::after {
+    left: auto;
+    right: 0;
+    animation-delay: 1s;
+}
+
+@keyframes title-underline {
+    0%, 100% {
+        width: 50px;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+.subtitle {
+    font-size: 48px;
+    color: chartreuse;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.subtitle::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100%;
+   
+    border-radius: 5px;
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.pre-order {
+    background-color: deeppink;
+}
+
+.teaser {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.pre-order:hover, .teaser:hover {
+    background: #fff;
+    color: #000;
+}
+
+.character-image {
+    max-height: 100px; /* Start with a smaller height */
+    width: auto;
+    transition: max-height 0.3s ease-in-out; /* Smooth transition for height change */
+}
+
+.character-image:hover {
+    max-height: 500px; /* Enlarge to the original size on hover */
+    transition: max-height 0.3s ease-in-out; /* Smooth transition back to original size */
+}
