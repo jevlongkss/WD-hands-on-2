@@ -29,7 +29,7 @@ body {
 }
 
 .navbar {
-    width: 100%; /* Extend the navbar to the full width */
+    width: 100%; 
     background: rgba(0, 0, 0, 0.6);
     padding: 1rem;
     display: flex;
@@ -72,7 +72,7 @@ h1 {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 50%;  /* Further reduced the width to 50% */
+    width: 50%;  
     margin: 20px auto;
     padding: 20px;
     color: white;
@@ -80,7 +80,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
-}
+  }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -92,7 +92,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     text-align: left;
-}
+  }
 
 .card h3 {
     font-size: 1.5rem;
@@ -105,15 +105,26 @@ h1 {
 }
 
 .card img {
-    width: 30%;
+    width: 50%; 
+    height: auto; 
+    object-fit: cover; 
     border-radius: 10px;
     margin-top: 10px;
-    transition: transform 0.3s ease;
-}
+    filter: grayscale(0.5); 
+    transition: filter 0.3s linear, transform 0.3s ease; 
+    cursor: pointer;
+    --m: radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
+         radial-gradient(circle farthest-side at left, #000 99%, #0000) 100% 0/46% 92% no-repeat;
+    -webkit-mask: var(--m);
+    mask: var(--m);
+  }
 
-.card img:hover {
+  .card img:hover {
+    -webkit-mask-position: 7.5% 50%, 92.5% 50%;
+    mask-position: 7.5% 50%, 92.5% 50%;
+    filter: grayscale(0); 
     transform: scale(1.1);
-}
+  }
 
 @media (max-width: 768px) {
     h1 {
@@ -129,7 +140,7 @@ h1 {
     }
 
     .card {
-        width: 80%;  /* Adjusted the width for smaller screens */
+        width: 80%;  
     }
 }
 
