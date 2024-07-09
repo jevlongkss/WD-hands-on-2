@@ -139,7 +139,7 @@ body {
     }
 }
 
-/* Paste the combined styles here */
+
 .card {
     display: grid;
     place-items: center;
@@ -185,7 +185,7 @@ body {
 .card__title {
     position: relative;
     width: fit-content;
-    width: -moz-fit-content; /* Necessary prefix for Firefox */
+    width: -moz-fit-content; 
 }
 
 .card__title::after {
@@ -201,7 +201,7 @@ body {
 .card__button {
     padding: 0.75em 1.6em;
     width: fit-content;
-    width: -moz-fit-content; /* Necessary prefix for Firefox */
+    width: -moz-fit-content; 
     font-variant: small-caps;
     font-weight: bold;
     border-radius: 0.45em;
