@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* Global reset */
+
 *,
 *::before,
 *::after {
@@ -176,14 +176,14 @@ body {
     max-width: 100%;
     height: auto;
     box-shadow: 40px 45px 12px 2px rgba(255, 255, 255, 0.8);
-    transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+    transition: box-shadow 0.3s ease; 
 }
 
 .left img:hover {
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* Adjusted box-shadow on hover */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); 
 }
 
-/* Right section (text content) */
+
 .right {
     flex: 1;
     display: flex;
@@ -239,7 +239,7 @@ body {
     font-size: 1.3rem;
 }
 
-/* Hero button */
+
 .hero-button {
     position: absolute;
     top: 1rem;
