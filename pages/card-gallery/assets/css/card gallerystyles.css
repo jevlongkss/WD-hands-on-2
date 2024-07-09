@@ -4,7 +4,7 @@
     --color-primary: #ffffff;
     --color-secondary: #222222;
     --color-accent: #ff7f50;
-    --color-background: url('https://i.pinimg.com/originals/0f/18/c4/0f18c45e07a7212f4d49e71213833e01.jpg') center/cover no-repeat; 
+    --color-background: url('../img/kame house.jpg') center/cover no-repeat; 
     --font-primary: 'Poppins', sans-serif;
 }
 
