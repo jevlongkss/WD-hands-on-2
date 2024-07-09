@@ -45,14 +45,14 @@ h2 {
 #Vegeta > .card-image {
     height: 55%;
     background-color: #FFDD33;
-    overflow: hidden; /* Ensures the image doesn't overflow its container */
+    overflow: hidden; 
 }
 
 #Vegeta > .card-image > img {
-    width: auto; /* Ensures the image width is its natural size */
-    height: 100%; /* Keeps the image height at 100% of its container */
-    display: block; /* Ensures the image behaves as a block element */
-    margin: 5 auto; /* Centers the image horizontally */
+    width: auto; 
+    height: 100%; 
+    display: block; 
+    margin: 5 auto; 
 }
 
 #Vegeta h2 {
