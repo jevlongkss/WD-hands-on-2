@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* Global reset */
+
 *,
 *::before,
 *::after {
@@ -232,12 +232,12 @@ body {
 }
 
 .character-image {
-    max-height: 100px; /* Start with a smaller height */
+    max-height: 100px; 
     width: auto;
-    transition: max-height 0.3s ease-in-out; /* Smooth transition for height change */
+    transition: max-height 0.3s ease-in-out; 
 }
 
 .character-image:hover {
-    max-height: 500px; /* Enlarge to the original size on hover */
-    transition: max-height 0.3s ease-in-out; /* Smooth transition back to original size */
+    max-height: 500px; 
+    transition: max-height 0.3s ease-in-out; 
 }
